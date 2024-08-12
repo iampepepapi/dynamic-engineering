@@ -55,11 +55,11 @@ export default function TestimonialCarousel() {
     }, []);
 
     return (
-        <section id="testimonials" className="bg-background py-20">
+        <section id="testimonials" className="bg-background py-4">
             <div className="max-w-7xl mx-auto text-center w-full">
-                <h2 className="text-5xl  font-bold mb-4 text-primary/90 tracking-wide">
+                {/* <h2 className="text-5xl  font-bold mb-4 text-primary/90 tracking-wide">
                     Testimonials
-                </h2>
+                </h2> */}
                 <div className="relative overflow-hidden">
                     <Carousel
                         ref={carouselRef} // Attach the ref to the Carousel component
