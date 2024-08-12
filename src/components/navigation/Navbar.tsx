@@ -43,13 +43,12 @@ const languages = [
 // test
 function Navbar() {
     return (
-        <nav className=" border-b bg-background border-gray-200 dark:border-gray-600 md:mx-12 lg:mx-24  h-12  justify-between flex">
-            <Link
-                href="/"
-                className="flex items-center space-x-3 rtl:space-x-reverse "
-            >
-                <Logo className="pl-4 fill-primary h-12" />
-            </Link>
+        <nav className="overflow-hidden border-b border-gray-200 dark:border-gray-600 relative flex justify-between md:mx-12 lg:mx-24 bg-background py-4">
+            <div className="flex">
+                <Link href="/" className="flex items-center">
+                    <Logo className="-ml-2 fill-primary h-6" />
+                </Link>
+            </div>
             <div className="flex items-center  flex-row-reverse md:flex-row">
                 <div className="hidden md:flex">
                     {links.map((link, index) => (
@@ -58,6 +57,7 @@ function Navbar() {
                         </Button>
                     ))}
                 </div>
+
                 <div className="md:hidden ">
                     <NavbarMobile />
                 </div>
