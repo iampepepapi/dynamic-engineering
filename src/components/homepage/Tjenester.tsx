@@ -8,14 +8,16 @@ import Synnove2 from "../../../public/img/synnove-2.png";
 function Tjenester() {
   return (
     <section className="mx-auto w-full bg-gradient-to-t from-primary/30 via-slate-200 px-0 backdrop-blur-[7px] before:blur-sm dark:from-background dark:to-primary-foreground/10 md:px-12 md:pt-4">
-      <main className="m-auto w-full max-w-7xl">
-        <div className="absolute inset-0 overflow-x-hidden md:overflow-visible">
-          <div className="relative w-full max-w-full overflow-hidden md:overflow-visible">
-            <div className="-z-10 ml-20 mt-48 w-full md:m-0 md:w-fit">
-              <Settings className="motion-safe:animate-gear-rotate size-96 max-w-full text-primary-foreground" />
-            </div>
-            <div className="-z-10 -ml-20 -mt-20">
-              <Settings className="motion-safe:animate-gear-rotate-left size-64 max-w-full text-primary-foreground/70" />
+      <main className="relative m-auto w-full max-w-7xl overflow-hidden md:overflow-visible">
+        <div className="absolute">
+          <div className="inset-0 overflow-x-hidden md:overflow-visible">
+            <div className="relative w-full max-w-full overflow-hidden md:overflow-visible">
+              <div className="-z-10 ml-20 mt-48 w-full overflow-hidden md:m-0 md:w-fit">
+                <Settings className="motion-safe:animate-gear-rotate size-96 max-w-full text-primary-foreground" />
+              </div>
+              <div className="-z-10 -ml-20 -mt-20 overflow-hidden">
+                <Settings className="motion-safe:animate-gear-rotate-left size-64 max-w-full text-primary-foreground/70" />
+              </div>
             </div>
           </div>
         </div>
@@ -39,7 +41,7 @@ function Tjenester() {
                   <Image
                     src="/img/synnove.png"
                     alt="Nøkkelferdige løsninger"
-                    className="m-auto size-60 transform items-center rounded-lg object-cover shadow-lg transition-transform duration-300 ease-in-out md:h-full md:w-full md:hover:scale-105 lg:flex lg:size-96"
+                    className="m-auto size-60 transform items-center rounded-lg object-cover shadow-lg backdrop-blur-md transition-transform duration-300 ease-in-out before:blur-md md:h-full md:w-full md:hover:scale-105 lg:flex lg:size-96"
                     width={400}
                     height={300}
                   />
