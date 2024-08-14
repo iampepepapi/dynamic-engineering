@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { Settings } from "lucide-react";
+import Synnove2 from "../../../public/img/synnove-2.png";
 
 function Tjenester() {
   return (
@@ -74,7 +75,7 @@ function Tjenester() {
                   whileHover={{ scale: 1.05 }}
                 >
                   <Image
-                    src="/img/synnove_2.png"
+                    src={Synnove2}
                     alt="Nøkkelferdige løsninger"
                     className="ease-int m-auto size-60 transform items-center rounded-lg object-cover shadow-lg transition-transform duration-300 md:h-full md:w-full md:hover:scale-100 lg:flex lg:size-96"
                     width={400}
