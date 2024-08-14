@@ -42,7 +42,6 @@ function Tjenester() {
                     width={400}
                     height={300}
                   />
-                  {/* Arrow pointing to the right (for desktop) */}
                 </motion.div>
                 <motion.div
                   className="absolute -top-2 hidden h-full w-full scale-0 items-center justify-center md:flex"
