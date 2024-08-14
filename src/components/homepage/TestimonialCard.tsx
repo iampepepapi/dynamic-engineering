@@ -60,7 +60,7 @@ export default function TestimonialCarousel() {
   return (
     <section
       id="testimonials"
-      className="bg-gradient-to-t from-background/10 via-slate-300/10 to-accent/10 backdrop-blur-[7px] before:blur-sm"
+      className="bg-gradient-to-t from-transparent via-black to-transparent before:blur-sm md:bg-transparent md:via-slate-300/10 md:backdrop-blur-[7px]"
       // border-b border-primary/5
     >
       <div className="mx-auto w-full max-w-7xl text-center">

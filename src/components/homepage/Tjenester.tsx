@@ -41,7 +41,7 @@ function Tjenester() {
                   <Image
                     src="/img/synnove.png"
                     alt="Nøkkelferdige løsninger"
-                    className="m-auto size-60 transform items-center rounded-lg object-cover shadow-lg backdrop-blur-md transition-transform duration-300 ease-in-out before:blur-md md:h-full md:w-full md:hover:scale-105 lg:flex lg:size-96"
+                    className="m-auto size-60 transform items-center rounded-lg object-cover shadow-lg backdrop-blur-md transition-transform duration-300 ease-in-out before:blur-md dark:shadow-white/5 md:h-full md:w-full md:hover:scale-105 lg:flex lg:size-96"
                     width={400}
                     height={300}
                   />
