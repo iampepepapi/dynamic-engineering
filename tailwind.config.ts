@@ -72,10 +72,35 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        'spin-backwards': {
+          to: {
+            transform: 'rotate(-360deg) ',
+          },
+        },
+        'gear-rotate': {
+          '0%': {
+            transform: 'rotate(0deg)',
+          },
+          '100%': {
+            transform: 'rotate(-180deg)',
+          },
+        },
+        'gear-rotate-left': {
+          '0%': {
+            transform: 'rotate(30deg)',
+          },
+          '100%': {
+            transform: 'rotate(210deg)',
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'spin-slow': 'spin 6s linear infinite',
+        'spin-backwards': 'spin-backwards 6s linear infinite ',
+        'gear-rotate': 'gear-rotate 3s linear infinite',
+        'gear-rotate-left': 'gear-rotate-left 3s linear infinite',
       },
     },
   },
