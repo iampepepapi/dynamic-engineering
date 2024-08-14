@@ -61,6 +61,7 @@ export default function TestimonialCarousel() {
     <section
       id="testimonials"
       className="bg-gradient-to-t from-background/10 via-slate-300/10 to-accent/10 backdrop-blur-[7px] before:blur-sm"
+      // border-b border-primary/5
     >
       <div className="mx-auto w-full max-w-7xl text-center">
         {/* <h2 className="text-5xl  font-bold mb-4 text-primary/90 tracking-wide">
