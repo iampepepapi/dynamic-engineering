@@ -29,11 +29,22 @@ function Tjenester() {
                 Nøkkelferdige løsninger
               </h2>
               <p className="mb-8 px-2 text-sm font-light leading-relaxed md:mb-16 md:px-16 md:text-lg lg:px-44">
-                Vi har lang erfaring innen EPCI (Engineering, Procurement,
-                Construction and Installation) prosjekter, prosesskontroll og
-                produkttransport. Våre komplette tjenester inkluderer hele
-                prosessen fra engineering til installasjon og igangsetting av
-                anlegget.
+                Vi har lang erfaring innen <b>EPCI</b> {"- ("}
+                <span className="font-normal text-cyan-800 underline underline-offset-2 dark:text-cyan-100">
+                  Engineering
+                </span>
+                {", "}
+                <span className="font-normal text-cyan-800 underline underline-offset-2 dark:text-cyan-100">
+                  Procurement
+                </span>
+                {", "}
+                <span className="font-normal text-cyan-800 underline underline-offset-2 dark:text-cyan-100">
+                  Construction and Installation
+                </span>
+                {") "}
+                prosjekter, prosesskontroll og produkttransport. Våre komplette
+                tjenester inkluderer hele prosessen fra engineering til
+                installasjon og igangsetting av anlegget.
               </p>
 
               <div className="relative grid grid-cols-1 gap-4 pb-12 md:grid-cols-2 md:gap-16">
@@ -49,16 +60,16 @@ function Tjenester() {
                 <motion.div
                   className="absolute -top-2 hidden h-full w-full scale-0 items-center justify-center md:flex"
                   animate={{
-                    x: [0, 10, 0],
+                    x: [0, 5, 0],
                     transition: {
                       repeat: Infinity,
                       repeatType: "reverse",
-                      duration: 1,
+                      duration: 5,
                     },
                   }}
                 >
                   <svg
-                    className="size-8"
+                    className="size-8 text-primary-foreground dark:text-slate-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
