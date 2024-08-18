@@ -9,19 +9,21 @@ function Tjenester() {
   return (
     <section className="mx-auto w-full bg-gradient-to-t from-primary/30 via-slate-200 px-0 backdrop-blur-[7px] before:blur-sm dark:from-background dark:to-primary-foreground/10 md:px-12 md:pt-4">
       <main className="relative m-auto w-full max-w-7xl overflow-hidden md:overflow-visible">
+        {/* Gear Icons */}
         <div className="absolute">
           <div className="inset-0 overflow-x-hidden md:overflow-visible">
             <div className="relative w-full max-w-full overflow-hidden md:overflow-visible">
               <div className="-z-10 ml-20 mt-48 w-full overflow-hidden md:m-0 md:w-fit">
-                <Settings className="motion-safe:animate-gear-rotate size-96 max-w-full text-primary-foreground" />
+                <Settings className="size-96 max-w-full text-primary-foreground motion-safe:animate-gear-rotate" />
               </div>
               <div className="-z-10 -ml-20 -mt-20 overflow-hidden">
-                <Settings className="motion-safe:animate-gear-rotate-left size-64 max-w-full text-primary-foreground/70" />
+                <Settings className="size-64 max-w-full text-primary-foreground/70 motion-safe:animate-gear-rotate-left" />
               </div>
             </div>
           </div>
         </div>
 
+        {/* Main Content */}
         <div className="mx-auto w-full max-w-7xl pt-4 text-center">
           <section className="text-primary">
             <div className="relative px-4">
@@ -47,6 +49,7 @@ function Tjenester() {
                 installasjon og igangsetting av anlegget.
               </p>
 
+              {/* Image Grid */}
               <div className="relative grid grid-cols-1 gap-4 pb-12 md:grid-cols-2 md:gap-16">
                 <motion.div className="relative" whileHover={{ scale: 1.05 }}>
                   <Image
@@ -94,8 +97,26 @@ function Tjenester() {
                     width={400}
                     height={300}
                   />
-                  {/* Arrow pointing downwards (for mobile) */}
                 </motion.div>
+              </div>
+
+              {/* New Section for CIP (Clean in place) */}
+              <div className="py-18 relative px-8 pb-8 text-left text-primary md:flex md:flex-row-reverse md:items-center md:gap-8">
+                <div className="z-10">
+                  <h3 className="mb-4 text-xl font-medium md:text-2xl">
+                    CIP (Clean in place)
+                  </h3>
+                  <p className="text-sm font-light leading-relaxed md:text-lg">
+                    Vi har levert komplett CIP anlegg til Synnøve Finden i
+                    Alvdal. Her har vi designet, tegnet og laget komplett
+                    automasjonsløsning integrert i eksisterende SCADA system.
+                    Anlegget vasker produksjonslinjene for gulost over 40 ganger
+                    per dag. Alle vaskene er optimalisert for kjemikalieforbruk
+                    for å tilfredsstille pålagte miljøkrav. Kunden har vært
+                    svært fornøyd med anlegget og vi skal levere et tilsvarende
+                    CIP anlegg til et av deres andre meieri.
+                  </p>
+                </div>
               </div>
             </div>
           </section>

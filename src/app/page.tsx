@@ -5,6 +5,8 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 import Tjenester from "@/components/homepage/Tjenester";
 import TestimonialCarousel from "@/components/homepage/TestimonialCard";
+import TjenesterLayout2 from "@/components/homepage/TjenesterLayout2";
+import Rådgivende from "@/components/homepage/Rådgivende";
 
 const services = [
   {
@@ -47,10 +49,17 @@ export default function Home() {
   return (
     <>
       <Homepage />
-
       {/* Testimonials Section */}
       <TestimonialCarousel />
-      <Tjenester />
+      {/* <div className="hidden md:block">
+        <Tjenester />
+      </div>
+      <div className="block md:hidden">
+        <TjenesterLayout2 />
+      </div> */}
+      {/* <Tjenester /> */}
+      <TjenesterLayout2 />
+      {/* <Rådgivende /> */}
     </>
   );
 }
