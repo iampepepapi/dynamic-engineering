@@ -112,13 +112,13 @@ function TjenesterLayout2() {
                             >
                               {/* Main Image */}
                               <motion.div
-                                className="relative z-30" // Ensure this stays on top
+                                className="relative z-30 m-auto h-full px-4" // Ensure this stays on top
                                 whileHover={{ scale: 1.05 }}
                               >
                                 <Image
                                   src={Synnove2}
                                   alt="Nøkkelferdige løsninger "
-                                  className="m-auto size-40 w-full rounded-lg object-cover md:max-w-sm"
+                                  className="rounded-lg object-cover md:max-w-sm"
                                   width={400}
                                   height={300}
                                 />
@@ -126,7 +126,7 @@ function TjenesterLayout2() {
                               <p className="hidden pt-2 text-xs text-gray-500 md:block">
                                 hover on the image
                               </p>
-                              <div className="flex justify-between gap-4 pt-2 md:hidden">
+                              {/* <div className="flex justify-between gap-4 pt-2 md:hidden">
                                 <Image
                                   src={"/img/aass-logo-neb.png"}
                                   alt="Card 2"
@@ -141,7 +141,7 @@ function TjenesterLayout2() {
                                   width={100}
                                   height={100}
                                 />
-                              </div>
+                              </div> */}
                               {/* Card 1 */}
                               <motion.div
                                 className="absolute left-10 top-2 z-20 max-w-full overflow-hidden" // Position slightly offset and behind main image
