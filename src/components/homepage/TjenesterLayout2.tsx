@@ -105,7 +105,7 @@ function TjenesterLayout2() {
                           <div className="relative flex-1 pb-4 md:flex md:justify-center md:pb-0">
                             {/* Main Image */}
                             <motion.div
-                              className="relative flex-1 pb-4 md:flex md:justify-center md:pb-0"
+                              className="relative flex flex-col pb-4 md:flex md:justify-center md:pb-0"
                               whileHover="hover" // Trigger hover effect on parent
                               initial="rest"
                               animate="rest"
@@ -117,16 +117,34 @@ function TjenesterLayout2() {
                               >
                                 <Image
                                   src={Synnove2}
-                                  alt="Nøkkelferdige løsninger"
-                                  className="m-auto size-40 w-full rounded-lg object-cover md:size-auto md:w-auto md:max-w-sm"
+                                  alt="Nøkkelferdige løsninger "
+                                  className="m-auto size-40 w-full rounded-lg object-cover md:max-w-sm"
                                   width={400}
                                   height={300}
                                 />
                               </motion.div>
-
+                              <p className="hidden pt-2 text-xs text-gray-500 md:block">
+                                hover on the image
+                              </p>
+                              <div className="flex justify-between gap-4 pt-2 md:hidden">
+                                <Image
+                                  src={"/img/aass-logo-neb.png"}
+                                  alt="Card 2"
+                                  className="w-30 overflow-visible rounded-lg object-cover"
+                                  width={100}
+                                  height={100}
+                                />
+                                <Image
+                                  src={"/img/synnove-logo-plain.png"}
+                                  alt="Card 1"
+                                  className="max-w-xm mt-4 w-full rounded-lg object-cover"
+                                  width={100}
+                                  height={100}
+                                />
+                              </div>
                               {/* Card 1 */}
                               <motion.div
-                                className="absolute left-10 top-2 z-20" // Position slightly offset and behind main image
+                                className="absolute left-10 top-2 z-20 max-w-full overflow-hidden" // Position slightly offset and behind main image
                                 initial={{
                                   opacity: 0,
                                   scale: 0.9,
@@ -142,17 +160,18 @@ function TjenesterLayout2() {
                                     opacity: 1,
                                     scale: 1,
                                     x: "50%",
-                                    y: "-75%",
+                                    y: "-85%",
                                     rotate: "10deg",
                                     transition: { duration: 0.5 },
                                   },
                                 }}
                               >
+                                {/* THIS IMAGE IS OVERLFLOWING TO THE SIDE */}
                                 <Image
                                   src={"/img/synnove-logo-plain.png"}
                                   alt="Card 1"
-                                  className="rounded-lg object-cover"
-                                  width={400}
+                                  className="max-w-xm w-full rounded-lg object-cover"
+                                  width={300}
                                   height={300}
                                 />
                               </motion.div>
@@ -174,9 +193,9 @@ function TjenesterLayout2() {
                                   hover: {
                                     opacity: 1,
                                     scale: 1,
-                                    x: "-70%",
-                                    y: "-100%",
-                                    rotate: "-40deg",
+                                    x: "-50%",
+                                    y: "-120%",
+                                    rotate: "-5deg",
                                     transition: { duration: 0.3 },
                                   },
                                 }}
@@ -188,6 +207,7 @@ function TjenesterLayout2() {
                                   width={200}
                                   height={300}
                                 />
+                                {/* <p>AASS</p> */}
                                 {/* <Settings size={400} /> */}
                               </motion.div>
                             </motion.div>
