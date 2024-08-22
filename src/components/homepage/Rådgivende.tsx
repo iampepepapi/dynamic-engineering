@@ -33,7 +33,7 @@ function Rådgivende() {
               til for å nå deres målsettinger.
             </p>
           </div>
-          <div className="flex pt-4 md:w-1/2 md:justify-center md:pt-0">
+          <div className="m-auto flex justify-center pt-4 md:w-1/2 md:pt-0">
             <Image
               src="/img/consulting-woodtech.jpg"
               alt="Nøkkelferdige løsninger"

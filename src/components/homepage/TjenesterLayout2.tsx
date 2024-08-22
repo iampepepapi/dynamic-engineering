@@ -1,4 +1,5 @@
-import { Settings } from "lucide-react";
+"use client";
+import { PenTool, Settings } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
@@ -91,7 +92,7 @@ function TjenesterLayout2() {
                               anlegg til et av deres andre meieri.
                             </p>
                           </div>
-                          <div className="left-0 flex-1 pb-4 md:mr-4 md:flex md:justify-center md:pb-0">
+                          {/* <div className="left-0 flex-1 pb-4 md:mr-4 md:flex md:justify-center md:pb-0">
                             <Image
                               src={Synnove2}
                               alt="Nøkkelferdige løsninger"
@@ -99,6 +100,97 @@ function TjenesterLayout2() {
                               width={400}
                               height={300}
                             />
+                          </div> */}
+
+                          <div className="relative flex-1 pb-4 md:flex md:justify-center md:pb-0">
+                            {/* Main Image */}
+                            <motion.div
+                              className="relative flex-1 pb-4 md:flex md:justify-center md:pb-0"
+                              whileHover="hover" // Trigger hover effect on parent
+                              initial="rest"
+                              animate="rest"
+                            >
+                              {/* Main Image */}
+                              <motion.div
+                                className="relative z-30" // Ensure this stays on top
+                                whileHover={{ scale: 1.05 }}
+                              >
+                                <Image
+                                  src={Synnove2}
+                                  alt="Nøkkelferdige løsninger"
+                                  className="m-auto size-40 w-full rounded-lg object-cover md:size-auto md:w-auto md:max-w-sm"
+                                  width={400}
+                                  height={300}
+                                />
+                              </motion.div>
+
+                              {/* Card 1 */}
+                              <motion.div
+                                className="absolute left-10 top-2 z-20" // Position slightly offset and behind main image
+                                initial={{
+                                  opacity: 0,
+                                  scale: 0.9,
+                                  rotate: "-5deg",
+                                }}
+                                variants={{
+                                  rest: {
+                                    opacity: 0,
+                                    scale: 0.9,
+                                    rotate: "-5deg",
+                                  },
+                                  hover: {
+                                    opacity: 1,
+                                    scale: 1,
+                                    x: "50%",
+                                    y: "-75%",
+                                    rotate: "10deg",
+                                    transition: { duration: 0.5 },
+                                  },
+                                }}
+                              >
+                                <Image
+                                  src={"/img/synnove-logo-plain.png"}
+                                  alt="Card 1"
+                                  className="rounded-lg object-cover"
+                                  width={400}
+                                  height={300}
+                                />
+                              </motion.div>
+
+                              {/* Card 2 */}
+                              <motion.div
+                                className="absolute left-12 top-4 z-10" // Position slightly offset and further behind
+                                initial={{
+                                  opacity: 0,
+                                  scale: 0.8,
+                                  rotate: "5deg",
+                                }}
+                                variants={{
+                                  rest: {
+                                    opacity: 0,
+                                    scale: 0.8,
+                                    rotate: "5deg",
+                                  },
+                                  hover: {
+                                    opacity: 1,
+                                    scale: 1,
+                                    x: "-70%",
+                                    y: "-100%",
+                                    rotate: "-40deg",
+                                    transition: { duration: 0.3 },
+                                  },
+                                }}
+                              >
+                                <Image
+                                  src={"/img/aass-logo-neb.png"}
+                                  alt="Card 2"
+                                  className="w-30 rounded-lg object-cover"
+                                  width={200}
+                                  height={300}
+                                />
+                                {/* <Settings size={400} /> */}
+                              </motion.div>
+                            </motion.div>
                           </div>
                         </section>
                       </div>
