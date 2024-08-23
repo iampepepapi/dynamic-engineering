@@ -36,16 +36,16 @@ export default function IIOTSection() {
           prosessdata.
         </h3>
       </div>
-      <div className="dynamic-gradient-paint-1 relative mt-4 grid grid-cols-1 gap-4 bg-contain p-8 md:grid-cols-3 md:gap-12">
+      <div className="dynamic-gradient-paint-1 relative mt-4 grid grid-cols-1 gap-4 bg-contain p-8 sm:px-4 md:gap-4 lg:grid-cols-3 lg:gap-12 lg:p-8">
         {/* Background with blur effect */}
 
         {/* Content in front of the blurred background */}
         {points.map((point, index) => (
           <div
             key={index}
-            className="relative flex flex-col items-center p-4 py-8 text-center text-secondary-foreground transition-transform duration-300 hover:scale-105"
+            className="relative flex flex-col items-center p-4 py-8 text-center text-secondary-foreground transition-transform duration-300 md:hover:scale-105"
           >
-            <div className="blur-xs absolute inset-0 rounded-3xl bg-gradient-to-tl from-gray-500/30 via-transparent to-primary/5 bg-contain filter dark:bg-gradient-to-tr dark:via-primary-foreground dark:to-primary-foreground"></div>
+            <div className="blur-xs absolute inset-0 rounded-3xl bg-gradient-to-tl from-cyan-500/10 via-transparent to-cyan-100/50 bg-contain filter dark:bg-gradient-to-tr dark:via-primary-foreground dark:to-primary-foreground"></div>
             <Image
               src={point.imgSrc}
               alt={point.title}
@@ -54,7 +54,7 @@ export default function IIOTSection() {
               height={200}
             />
             <h3 className="z-10 mb-2 text-xl font-semibold">{point.title}</h3>
-            <p className="z-10 px-2 text-left text-sm md:text-base">
+            <p className="z-10 text-wrap px-2 text-left text-sm md:text-sm">
               {point.description}
             </p>
           </div>

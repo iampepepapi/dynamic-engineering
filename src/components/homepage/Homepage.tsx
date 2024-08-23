@@ -9,9 +9,8 @@ function Homepage() {
       <div className="relative h-20">
         <ParticleBackground />
       </div>
-      <h1 className="flex w-fit overflow-hidden text-wrap p-4 text-center text-2xl text-primary md:text-6xl">
-        <span className="-mr-2">Everything&apos;s</span>
-        &nbsp; possible
+      <h1 className="w-full p-4 text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+        Everything&apos;s possible
       </h1>
     </main>
   );

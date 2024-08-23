@@ -32,7 +32,7 @@ function ScrollToTopButton() {
     <div className="fixed bottom-4 right-4 z-50 hidden md:block">
       {isVisible && (
         <Button
-          className="rounded-full bg-gray-300 p-3 text-white shadow-lg hover:bg-slate-400 dark:bg-primary-foreground dark:hover:bg-primary/30"
+          className="rounded-full bg-gray-200 p-3 text-black shadow-lg hover:bg-cyan-50 dark:bg-primary-foreground dark:text-white dark:hover:bg-primary/30"
           onClick={scrollToTop}
         >
           <ChevronUp className="h-6 w-6" />

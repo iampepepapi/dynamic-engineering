@@ -40,13 +40,13 @@ function TjenesterLayout2() {
                               height={300}
                             />
                           </div>
-                          <div className="flex-1 px-4 py-4 text-left text-primary md:text-right">
-                            <div className="flex w-full justify-end text-right">
+                          <div className="flex-1 px-4 py-4 text-left text-primary md:text-left">
+                            <div className="flex w-full md:justify-start md:text-right">
                               <h2 className="mb-2 w-fit border-b border-primary/20 pb-2 text-center text-2xl font-bold md:text-wrap md:text-4xl">
                                 Nøkkelferdige løsninger
                               </h2>
                             </div>
-                            <p className="text-xs md:text-base">
+                            <p className="text-sm md:text-base">
                               Vi har lang erfaring innen <b>EPCI</b> {"- ("}
                               <span className="font-normal text-cyan-800 underline underline-offset-2 dark:text-cyan-100">
                                 Engineering
@@ -112,7 +112,7 @@ function TjenesterLayout2() {
                             >
                               {/* Main Image */}
                               <motion.div
-                                className="relative z-30 m-auto h-full px-4" // Ensure this stays on top
+                                className="relative z-30 m-auto hidden h-full px-4 sm:px-0 md:block" // Ensure this stays on top
                                 whileHover={{ scale: 1.05 }}
                               >
                                 <Image
@@ -123,6 +123,7 @@ function TjenesterLayout2() {
                                   height={300}
                                 />
                               </motion.div>
+
                               <p className="hidden pt-2 text-xs text-gray-500 md:block">
                                 hover on the image
                               </p>
@@ -211,6 +212,15 @@ function TjenesterLayout2() {
                                 {/* <Settings size={400} /> */}
                               </motion.div>
                             </motion.div>
+                            <div className="relative z-30 m-auto block h-full px-4 md:hidden">
+                              <Image
+                                src={Synnove2}
+                                alt="Nøkkelferdige løsninger "
+                                className="rounded-lg object-cover md:max-w-sm"
+                                width={400}
+                                height={300}
+                              />
+                            </div>
                           </div>
                         </section>
                       </div>

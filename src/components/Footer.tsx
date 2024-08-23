@@ -7,13 +7,13 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-gray-400/50 to-white py-4 text-gray-500 before:blur-md before:backdrop-blur-md dark:bg-background dark:bg-dynamic-gradient">
+    <footer className="bg-gray-300 py-4 text-gray-500 before:blur-md before:backdrop-blur-md dark:bg-background">
       <div className="container mx-auto px-4 pt-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-between text-black dark:text-gray-100">
           {/* Company Info */}
           <div className="mb-6 w-full md:mb-0 md:w-1/3">
             <h5 className="mb-4 text-lg font-bold">Company</h5>
-            <p className="pr-4 text-gray-500">
+            <p className="pr-4">
               Core competence in design and project delivery of automated
               process plants and machines within offshore/maritime and the
               industry sector.
@@ -85,22 +85,33 @@ function Footer() {
           {/* Social Media */}
           <div className="w-full md:w-1/3">
             <h5 className="mb-4 text-lg font-bold">Contact Us</h5>
-            <ul className="text-gray-500">
-              <li className="mb-2">
-                <strong>Email:</strong>{" "}
-                <a href="mailto:post@d-eng.no" className="hover:text-primary">
+            <ul className="text-cyan-700 dark:text-cyan-400">
+              <li className="mb-2 flex">
+                <p className="hover:text-primary">
+                  {" "}
+                  <strong className="text-black dark:text-white">
+                    Email:
+                  </strong>{" "}
                   post@d-eng.no
-                </a>
+                </p>
               </li>
-              <li className="mb-2">
-                <strong>Phone:</strong>{" "}
-                <a href="tel:+4790258045" className="hover:text-primary">
+              <li className="mb-2 flex">
+                <p className="hover:text-primary">
+                  {" "}
+                  <strong className="text-black dark:text-white">
+                    Phone:
+                  </strong>{" "}
                   902 58 045
-                </a>
+                </p>
               </li>
-              <li>
-                <strong>Address:</strong>{" "}
-                <span>Støperigata 7, Drammen, Norway</span>
+              <li className="mb-2 flex">
+                <p className="hover:text-primary">
+                  {" "}
+                  <strong className="text-black dark:text-white">
+                    Adress:
+                  </strong>{" "}
+                  Støperigata 7, Drammen, Norway
+                </p>
               </li>
             </ul>
           </div>
@@ -114,7 +125,7 @@ function Footer() {
           >
             <SimpleIcon
               icon={siFacebook}
-              className="h-6 w-6 fill-slate-400 transition-colors duration-300 group-hover:fill-primary"
+              className="h-6 w-6 fill-slate-400 transition-colors duration-300 group-hover:fill-cyan-700 dark:group-hover:fill-cyan-300"
             />
           </Link>
           <Link
@@ -124,7 +135,7 @@ function Footer() {
           >
             <SimpleIcon
               icon={siLinkedin}
-              className="h-6 w-6 fill-slate-400 transition-colors duration-300 group-hover:fill-primary"
+              className="h-6 w-6 fill-slate-400 transition-colors duration-300 group-hover:fill-cyan-700 dark:group-hover:fill-cyan-300"
             />
           </Link>
         </div>
