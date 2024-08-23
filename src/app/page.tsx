@@ -9,6 +9,7 @@ import TjenesterLayout2 from "@/components/homepage/TjenesterLayout2";
 import Rådgivende from "@/components/homepage/Rådgivende";
 import IIOTSection from "@/components/homepage/IIOTSection";
 import ScrollToTopButton from "@/components/ScrollToTop";
+import Overvok from "@/components/homepage/Overvok";
 
 const services = [
   {
@@ -66,6 +67,7 @@ export default function Home() {
       <div className="bg-gray-300 dark:bg-background">
         <IIOTSection />
       </div>
+      <Overvok />
     </>
   );
 }

@@ -110,7 +110,7 @@ function Footer() {
                   <strong className="text-black dark:text-white">
                     Adress:
                   </strong>{" "}
-                  Støperigata 7, Drammen, Norway
+                  Gråterudveien 20, Drammen, Norway
                 </p>
               </li>
             </ul>
