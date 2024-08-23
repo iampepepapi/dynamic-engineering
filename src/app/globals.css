@@ -30,8 +30,8 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
 
-    --gradient-start: theme("colors.stone.200");
-    --gradient-end: theme("colors.primary.foreground");
+    --gradient-start: theme("colors.gray.300");
+    --gradient-end: theme("colors.white");
   }
 
   .dark {
@@ -118,4 +118,30 @@ main > div {
   .motion-safe\:animate-spin-backwards {
     animation: spin 3s linear infinite;
   }
+}
+
+.dynamic-gradient-paint-1 {
+  position: relative;
+  overflow: visible;
+  opacity: 1; /* Ensure the content is fully visible */
+  /* Hide horizontal overflow */
+}
+
+.dynamic-gradient-paint-1::before {
+  width: 1000px; /* Adjust width based on viewport width */
+  height: 100px;
+  content: "";
+  background-image: linear-gradient(
+    43deg,
+    hsl(var(--primary-foreground)),
+    theme("colors.slate.400")
+  ); /* Correct variable usage */
+  position: absolute;
+  z-index: -1;
+  border-radius: 20% 50% 30% 20%;
+  filter: blur(90px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the gradient background */
+  transition: 1s;
 }

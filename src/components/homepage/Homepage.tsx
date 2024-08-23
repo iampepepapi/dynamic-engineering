@@ -5,7 +5,7 @@ import ParticleBackground from "../particles";
 
 function Homepage() {
   return (
-    <main className="gradient-background relative flex h-[calc(100vh-61px)] w-screen items-center justify-center">
+    <main className="gradient-background relative flex h-[calc(100vh-61px)] items-center justify-center">
       <div className="relative h-20">
         <ParticleBackground />
       </div>

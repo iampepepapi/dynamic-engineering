@@ -9,7 +9,7 @@ import Rådgivende from "./Rådgivende";
 function TjenesterLayout2() {
   return (
     <div className="">
-      <section className="mx-auto w-full bg-gradient-to-t from-primary/30 via-slate-200 to-transparent px-0 pb-8 backdrop-blur-[7px] before:blur-sm dark:from-background dark:to-primary-foreground/10 md:px-12 md:pt-4">
+      <section className="mx-auto w-full bg-gradient-to-t from-gray-300 via-slate-200/30 to-transparent px-0 pb-8 backdrop-blur-[7px] before:blur-sm dark:from-background dark:to-primary-foreground/10 md:px-12 md:pt-4">
         <main className="relative m-auto w-full max-w-7xl overflow-hidden md:overflow-visible">
           <div className="absolute">
             <div className="inset-0 overflow-x-hidden md:overflow-visible">
@@ -79,7 +79,7 @@ function TjenesterLayout2() {
                             <h2 className="mb-2 w-fit border-b border-primary/20 pb-2 text-2xl font-bold md:text-4xl">
                               CIP (Clean in place)
                             </h2>
-                            <p className="whitespace-wrap overflow-auto text-xs md:text-base">
+                            <p className="whitespace-wrap overflow-auto text-sm md:text-base">
                               Vi har levert komplett CIP anlegg til Synnøve
                               Finden i Alvdal. Her har vi designet, tegnet og
                               laget komplett automasjonsløsning integrert i
@@ -102,10 +102,10 @@ function TjenesterLayout2() {
                             />
                           </div> */}
 
-                          <div className="relative flex-1 pb-4 md:flex md:justify-center md:pb-0">
+                          <div className="relative flex-1 pb-0 md:flex md:justify-center md:pb-0">
                             {/* Main Image */}
                             <motion.div
-                              className="relative flex flex-col pb-4 md:flex md:justify-center md:pb-0"
+                              className="relative flex flex-col pb-0 md:flex md:justify-center md:pb-0"
                               whileHover="hover" // Trigger hover effect on parent
                               initial="rest"
                               animate="rest"
@@ -171,8 +171,8 @@ function TjenesterLayout2() {
                                   src={"/img/synnove-logo-plain.png"}
                                   alt="Card 1"
                                   className="max-w-xm w-full rounded-lg object-cover"
-                                  width={300}
-                                  height={300}
+                                  width={200}
+                                  height={200}
                                 />
                               </motion.div>
 

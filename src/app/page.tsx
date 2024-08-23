@@ -7,6 +7,8 @@ import Tjenester from "@/components/homepage/Tjenester";
 import TestimonialCarousel from "@/components/homepage/TestimonialCard";
 import TjenesterLayout2 from "@/components/homepage/TjenesterLayout2";
 import Rådgivende from "@/components/homepage/Rådgivende";
+import IIOTSection from "@/components/homepage/IIOTSection";
+import ScrollToTopButton from "@/components/ScrollToTop";
 
 const services = [
   {
@@ -48,6 +50,7 @@ const testimonials = [
 export default function Home() {
   return (
     <>
+      <ScrollToTopButton />
       <Homepage />
       {/* Testimonials Section */}
       <TestimonialCarousel />
@@ -60,6 +63,9 @@ export default function Home() {
       {/* <Tjenester /> */}
       <TjenesterLayout2 />
       {/* <Rådgivende /> */}
+      <div className="bg-gray-300 dark:bg-background">
+        <IIOTSection />
+      </div>
     </>
   );
 }
