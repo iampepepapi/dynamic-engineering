@@ -43,10 +43,10 @@ const languages = [
 // test
 function Navbar() {
   return (
-    <nav className="relative flex justify-between border-b border-gray-200 bg-background py-4 pl-4 dark:border-gray-600 md:mx-12 md:overflow-visible md:pl-0 lg:mx-24">
-      <div className="flex">
+    <nav className="sticky top-0 z-50 flex justify-between border-b border-gray-200 bg-slate-50 px-4 py-4 pl-4 dark:border-gray-600 dark:bg-background md:overflow-visible md:px-6 md:pl-0 lg:px-12">
+      <div className="flex justify-center">
         <Link href="/" className="flex items-center">
-          <Logo className="-ml-2 h-8 w-full fill-primary" />
+          <Logo className="ml-2 h-8 w-full fill-primary md:ml-4" />
         </Link>
       </div>
       <div className="flex flex-row-reverse items-center md:flex-row">
@@ -64,7 +64,11 @@ function Navbar() {
         <ThemeToggle />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant={"link"} className="px-3 py-2" aria-hidden>
+            <Button
+              variant={"link"}
+              className="px-3 py-2 hover:bg-background/20"
+              aria-hidden
+            >
               <Languages />
             </Button>
           </DropdownMenuTrigger>

@@ -32,6 +32,7 @@
 
     --gradient-start: theme("colors.gray.300");
     --gradient-end: theme("colors.white");
+    --motion-card: 215, 19%, 35%, 1;
   }
 
   .dark {
@@ -62,6 +63,7 @@
 
     --gradient-start: black;
     --gradient-end: theme("colors.primary.foreground");
+    --motion-card: 210 40% 98%;
   }
 }
 
@@ -144,4 +146,24 @@ main > div {
   left: 50%;
   transform: translate(-50%, -50%); /* Center the gradient background */
   transition: 1s;
+}
+
+.monitor-card::before {
+  background: linear-gradient(transparent, hsl(var(--border)), transparent);
+  height: 100%;
+  width: 3px;
+  position: absolute;
+  left: -1px; /* For the left line */
+  top: 0;
+  content: "";
+}
+
+.monitor-card::after {
+  background: linear-gradient(transparent, hsl(var(--border)), transparent);
+  height: 100%;
+  width: 3px;
+  position: absolute;
+  right: -1px; /* For the right line */
+  top: 0;
+  content: "";
 }

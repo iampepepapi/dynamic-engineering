@@ -64,9 +64,8 @@ export default function Home() {
       {/* <Tjenester /> */}
       <TjenesterLayout2 />
       {/* <Rådgivende /> */}
-      <div className="bg-gray-300 dark:bg-background">
-        <IIOTSection />
-      </div>
+      {/* <div className="bg-gray-300 dark:bg-background"></div> */}
+      <IIOTSection />
       <Overvok />
     </>
   );

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="bg-gray-300 py-4 text-gray-500 before:blur-md before:backdrop-blur-md dark:bg-background">
+    <footer className="bg-gray-100 py-4 text-gray-500 before:blur-md before:backdrop-blur-md dark:bg-background">
       <div className="container mx-auto px-4 pt-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-between text-black dark:text-gray-100">
           {/* Company Info */}

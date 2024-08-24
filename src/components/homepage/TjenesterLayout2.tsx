@@ -27,7 +27,7 @@ function TjenesterLayout2() {
             <section className="text-primary">
               <div className="relative px-4">
                 <div className="relative">
-                  <section className="mx-auto mb-0 w-full rounded-2xl md:px-12">
+                  <section className="mx-auto w-full rounded-2xl md:px-12">
                     <main className="relative m-auto w-full max-w-7xl overflow-hidden md:overflow-visible">
                       <div className="mx-auto flex w-full max-w-7xl flex-col md:flex-row">
                         <section className="flex w-full flex-col-reverse items-center gap-8 lg:flex-row">
@@ -46,7 +46,7 @@ function TjenesterLayout2() {
                                 Nøkkelferdige løsninger
                               </h2>
                             </div>
-                            <p className="text-sm md:text-base">
+                            <p className="text-sm md:text-xl">
                               Vi har lang erfaring innen <b>EPCI</b> {"- ("}
                               <span className="font-normal text-cyan-800 underline underline-offset-2 dark:text-cyan-100">
                                 Engineering
@@ -79,7 +79,7 @@ function TjenesterLayout2() {
                             <h2 className="mb-2 w-fit border-b border-primary/20 pb-2 text-2xl font-bold md:text-4xl">
                               CIP (Clean in place)
                             </h2>
-                            <p className="whitespace-wrap overflow-auto text-sm md:text-base">
+                            <p className="whitespace-wrap overflow-auto text-sm md:text-xl">
                               Vi har levert komplett CIP anlegg til Synnøve
                               Finden i Alvdal. Her har vi designet, tegnet og
                               laget komplett automasjonsløsning integrert i
