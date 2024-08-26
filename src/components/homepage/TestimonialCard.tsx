@@ -60,10 +60,10 @@ export default function TestimonialCarousel() {
   return (
     <section
       id="testimonials"
-      className="bg-g [7px]"
+      className="[7px] bg-gray-200 dark:bg-primary-foreground"
       // border-b border-primary/5
     >
-      <div className="mx-auto w-full max-w-7xl text-center">
+      <div className="mx-auto w-full text-center">
         {/* <h2 className="text-5xl  font-bold mb-4 text-primary/90 tracking-wide">
                     Testimonials
                 </h2> */}

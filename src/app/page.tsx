@@ -53,20 +53,14 @@ export default function Home() {
     <>
       <ScrollToTopButton />
       <Homepage />
-      {/* Testimonials Section */}
-      <TestimonialCarousel />
-      {/* <div className="hidden md:block">
-        <Tjenester />
+      <div className="bg-background">
+        <TestimonialCarousel />
+        <div className="mx-auto flex min-h-screen flex-col items-center justify-center overflow-hidden">
+          <TjenesterLayout2 />
+          <IIOTSection />
+          <Overvok />
+        </div>
       </div>
-      <div className="block md:hidden">
-        <TjenesterLayout2 />
-      </div> */}
-      {/* <Tjenester /> */}
-      <TjenesterLayout2 />
-      {/* <Rådgivende /> */}
-      {/* <div className="bg-gray-300 dark:bg-background"></div> */}
-      <IIOTSection />
-      <Overvok />
     </>
   );
 }

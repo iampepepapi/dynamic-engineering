@@ -15,10 +15,10 @@ function TjenesterLayout2() {
             <div className="inset-0 overflow-x-hidden md:overflow-visible">
               <div className="relative w-full max-w-full overflow-hidden md:overflow-visible">
                 <div className="-z-10 ml-20 mt-48 w-full overflow-hidden md:m-0 md:w-fit">
-                  <Settings className="size-96 max-w-full text-primary-foreground motion-safe:animate-gear-rotate" />
+                  <Settings className="size-96 max-w-full text-gray-200/70 motion-safe:animate-gear-rotate dark:text-primary-foreground/70" />
                 </div>
                 <div className="-z-10 -ml-20 -mt-20 overflow-hidden">
-                  <Settings className="size-64 max-w-full text-primary-foreground/70 motion-safe:animate-gear-rotate-left" />
+                  <Settings className="size-64 max-w-full text-gray-200/70 motion-safe:animate-gear-rotate-left dark:text-primary-foreground/70" />
                 </div>
               </div>
             </div>

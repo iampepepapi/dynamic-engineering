@@ -22,7 +22,7 @@ export default function MonitorSection() {
 
   return (
     <>
-      <section className="relative mx-auto flex w-full flex-col items-center gap-4 bg-gradient-to-b from-gray-300 to-slate-400 p-8 dark:bg-background dark:bg-gradient-to-t dark:from-background md:px-12">
+      <section className="relative mx-auto flex w-full flex-col items-center gap-4 bg-gradient-to-b from-gray-200 to-slate-400 p-4 py-12 dark:bg-background dark:bg-gradient-to-t dark:from-background md:px-12">
         <div className="monitor-card container relative mx-auto flex w-full max-w-7xl flex-col items-center gap-4 rounded-3xl bg-slate-300 py-8 text-center dark:bg-slate-900 md:mx-auto lg:flex-row">
           <div className="relative flex-1 md:w-2/3">
             <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-gray-100">

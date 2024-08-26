@@ -25,14 +25,14 @@ export default function IIOTSection() {
   ];
 
   return (
-    <section className="relative bg-gray-300 text-primary dark:bg-background md:px-12">
+    <section className="relative bg-gray-200 pb-12 text-primary dark:bg-background md:px-12">
       <div className="mx-auto w-full max-w-7xl">
         <div className="m-auto flex flex-col items-center px-4 lg:flex-row">
           <div>
             <h2 className="mb-4 text-center text-2xl font-bold md:text-4xl">
               Effektivisering gjennom IIOT og analyse
             </h2>
-            <h3 className="text-center text-3xl">
+            <h3 className="text-center text-2xl">
               Vi skreddersyr systemer som integrerer med eksisterende anlegg for
               å effektivisere digitale sjekklister, rapporter og analyse av
               prosessdata.

@@ -3,7 +3,7 @@ import React from "react";
 
 function Rådgivende() {
   return (
-    <div className="">
+    <div className="mb-4 rounded-3xl border-4 bg-primary-foreground py-12">
       {/* Rådgivende Section */}
       <section className="mx-auto w-full max-w-7xl rounded-2xl px-6 md:px-20">
         <div className="flex items-center justify-center md:justify-start">
@@ -21,8 +21,8 @@ function Rådgivende() {
 
       {/* Text and Image Section */}
       <section className="relative mx-auto mt-12 max-w-7xl rounded-2xl px-6 md:px-12">
-        <div className="flex flex-col items-center justify-center gap-x-4 lg:flex-row-reverse">
-          <div className="relative top-0 mt-0 justify-center pt-0 lg:w-1/2">
+        <div className="flex flex-col items-center justify-center gap-x-4">
+          <div className="relative top-0 mt-0 justify-center pt-0">
             <p className="text-shadow-lg text-left text-sm leading-relaxed tracking-wide text-foreground md:text-xl md:tracking-normal">
               Selv om vi er en liten bedrift, har vi allerede opparbeidet oss et
               godt rykte med flere tunge aktører som blant annet Schlumberger,
@@ -34,21 +34,25 @@ function Rådgivende() {
             </p>
           </div>
           <div className="relative flex gap-4 pt-8 md:block">
-            <div className="relative grid grid-cols-1 md:grid-cols-2">
-              <Image
-                src="/img/consulting-woodtech.jpg"
-                alt="Nøkkelferdige løsninger"
-                className="h-full w-full rounded-lg object-cover md:max-h-64"
-                width={400}
-                height={300}
-              />
-              <Image
-                src="/img/consulting.png"
-                alt="Nøkkelferdige løsninger"
-                className="h-full w-full rounded-lg object-cover md:max-h-64"
-                width={400}
-                height={300}
-              />
+            <div className="relative grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div className="aspect-square overflow-hidden rounded-3xl">
+                <Image
+                  src="/img/consulting-woodtech.jpg"
+                  alt="Nøkkelferdige løsninger"
+                  className="h-full w-full object-cover"
+                  width={400}
+                  height={300}
+                />
+              </div>
+              <div className="aspect-square overflow-hidden rounded-3xl border">
+                <Image
+                  src="/img/consulting.png"
+                  alt="Nøkkelferdige løsninger"
+                  className="h-full w-full bg-card object-cover dark:bg-accent"
+                  width={400}
+                  height={300}
+                />
+              </div>
             </div>
           </div>
         </div>
