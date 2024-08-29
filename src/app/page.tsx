@@ -55,7 +55,7 @@ export default function Home() {
       <Homepage />
       <div className="bg-background">
         <TestimonialCarousel />
-        <div className="mx-auto flex min-h-screen flex-col items-center justify-center overflow-hidden">
+        <div className="">
           <TjenesterLayout2 />
           <IIOTSection />
           <Overvok />
